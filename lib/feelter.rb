@@ -1,3 +1,4 @@
+require "feelter/app"
 require "feelter/version"
 
 module Feelter
