@@ -1,6 +1,5 @@
-require "feelter"
+require "feedjira"
 require "open-uri"
-require "rss"
 
 module Feelter
   class Feed
@@ -9,7 +8,7 @@ module Feelter
     end
 
     def get_feed(url)
-      @source = RSS::Parser.parse(open(url).read, true)
+      @source = Feedjira::Feed.parse(open(url).read)
     end
   end
 end

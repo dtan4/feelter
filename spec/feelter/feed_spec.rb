@@ -16,7 +16,7 @@ module Feelter
 
       it "should get feed xml" do
         feed.get_feed(feed_url)
-        expect(feed.instance_variable_get(:@source)).to be_a RSS::Rss
+        expect(feed.instance_variable_get(:@source).title).to eq "RubyFlow"
       end
     end
   end
