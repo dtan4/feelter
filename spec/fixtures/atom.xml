@@ -1,0 +1,95 @@
+<feed xmlns="http://www.w3.org/2005/Atom" xml:lang="ja">
+  <title>Sample Atom</title>
+
+  <subtitle>echo</subtitle>
+
+  <link href="http://dtan4.hatenablog.com/"/>
+  <updated>2014-06-08T22:02:12+09:00</updated>
+  <author>
+    <name>dtan4</name>
+  </author>
+  <generator uri="http://blog.hatena.ne.jp/" version="6bf42a4477d3b87be63f264869bd08eb">Hatena::Blog</generator>
+  <id>hatenablog://blog/12704591929891227966</id>
+
+
+
+    <entry>
+        <title>hoge1</title>
+        <link href="http://dtan4.hatenablog.com/entry/2014/06/08/220211"/>
+        <id>hatenablog://entry/12921228815725740415</id>
+        <published>2014-06-08T22:02:11+09:00</published>
+        <updated>2014-06-08T22:02:11+09:00</updated>
+        <summary>summary</summary>
+        <content type="html">
+          content
+</content>
+
+
+
+        <author>
+            <name>dtan4</name>
+        </author>
+    </entry>
+
+
+
+    <entry>
+        <title>hoge2</title>
+        <link href="http://dtan4.hatenablog.com/entry/2014/05/13/210438"/>
+        <id>hatenablog://entry/12921228815724000821</id>
+        <published>2014-05-13T21:04:38+09:00</published>
+        <updated>2014-05-13T21:04:38+09:00</updated>
+        <summary>summary</summary>
+        <content type="html">
+          content
+</content>
+
+
+
+        <author>
+            <name>dtan4</name>
+        </author>
+    </entry>
+
+
+
+    <entry>
+        <title>hoge3</title>
+        <link href="http://dtan4.hatenablog.com/entry/2014/04/30/235331"/>
+        <id>hatenablog://entry/12921228815723009299</id>
+        <published>2014-04-30T23:53:31+09:00</published>
+        <updated>2014-04-30T23:53:31+09:00</updated>
+        <summary>summary</summary>
+        <content type="html">
+          content
+</content>
+
+
+
+        <author>
+            <name>dtan4</name>
+        </author>
+    </entry>
+
+
+
+    <entry>
+        <title>hoge4</title>
+        <link href="http://dtan4.hatenablog.com/entry/2013/12/04/015333"/>
+        <id>hatenablog://entry/12921228815713751854</id>
+        <published>2013-12-04T01:53:33+09:00</published>
+        <updated>2013-12-04T01:53:33+09:00</updated>
+        <summary>summary</summary>
+        <content type="html">
+          content
+</content>
+
+
+
+        <author>
+            <name>dtan4</name>
+        </author>
+    </entry>
+
+
+</feed>
