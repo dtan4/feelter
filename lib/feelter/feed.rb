@@ -6,7 +6,7 @@ module Feelter
       @source = nil
     end
 
-    def get_feed(url)
+    def parse_feed(url)
       xml = open(url).read
 
       parser_classes.each do |klass|

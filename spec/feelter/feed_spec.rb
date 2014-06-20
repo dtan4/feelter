@@ -7,8 +7,8 @@ module Feelter
       described_class.new
     end
 
-    describe "#get_feed" do
-      context "with Atom" do
+    describe "#parse_feed" do
+      context "Atom is given" do
         let(:feed_url) do
           "http://example.com/atom.xml"
         end
@@ -22,7 +22,7 @@ module Feelter
         end
 
         it "should get feed xml" do
-          feed.get_feed(feed_url)
+          feed.parse_feed(feed_url)
           expect(feed.instance_variable_get(:@source)).to be_a Feelter::FeedParser::Atom
         end
       end
@@ -41,7 +41,7 @@ module Feelter
         end
 
         it "should get feed xml" do
-          feed.get_feed(feed_url)
+          feed.parse_feed(feed_url)
           expect(feed.instance_variable_get(:@source)).to be_a Feelter::FeedParser::RSS
         end
       end
