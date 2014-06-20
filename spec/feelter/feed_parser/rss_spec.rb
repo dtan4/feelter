@@ -32,6 +32,16 @@ module Feelter
           it { expect(parsable).to be true }
         end
       end
+
+      let(:instance) do
+        described_class.new(rss)
+      end
+
+      describe "#initialize" do
+        it "should have a instance of Nokogiri::XML::Document" do
+          expect(instance.instance_variable_get(:@doc)).to be_a Nokogiri::XML::Document
+        end
+      end
     end
   end
 end
