@@ -9,7 +9,7 @@ module Feelter
       described_class.new
     end
 
-    describe "#get_feed" do
+    pending "#get_feed" do
       context "with RSS 2.0" do
         let(:feed_url) do
           "http://example.com/rss.xml"
