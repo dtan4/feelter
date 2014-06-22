@@ -7,6 +7,10 @@ module Feelter
       described_class.new
     end
 
+    before do
+      stub_request(:get, feed_url).to_return(body: xml, status: 200)
+    end
+
     describe "#parse_feed" do
       context "Atom is given" do
         let(:feed_url) do
@@ -15,10 +19,6 @@ module Feelter
 
         let(:xml) do
           open(fixture_path("atom.xml")).read
-        end
-
-        before do
-          stub_request(:get, feed_url).to_return(body: xml, status: 200)
         end
 
         it "should get feed xml" do
@@ -36,13 +36,25 @@ module Feelter
           open(fixture_path("rss.xml")).read
         end
 
-        before do
-          stub_request(:get, feed_url).to_return(body: xml, status: 200)
-        end
-
         it "should get feed xml" do
           feed.parse_feed(feed_url)
           expect(feed.instance_variable_get(:@source)).to be_a Feelter::FeedParser::RSS
+        end
+      end
+
+      context "invalid argument is given" do
+        let(:feed_url) do
+          "http://example.com/invalid.xml"
+        end
+
+        let(:xml) do
+          "invalid"
+        end
+
+        it "should raise InvalidFeedExecption" do
+          expect do
+            feed.parse_feed(feed_url)
+          end.to raise_error InvalidFeedExecption
         end
       end
     end

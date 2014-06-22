@@ -16,7 +16,7 @@ module Feelter
         end
       end
 
-      railse InvalidFeedExecption if @source.nil?
+      raise InvalidFeedExecption if @source.nil?
     end
 
     private
