@@ -23,7 +23,7 @@ module Feelter
 
         it "should get feed xml" do
           feed.parse_feed(feed_url)
-          expect(feed.instance_variable_get(:@source)).to be_a Feelter::FeedParser::Atom
+          expect(feed.instance_variable_get(:@source)).to be_a Feelter::Parser::Atom
         end
       end
 
@@ -38,7 +38,7 @@ module Feelter
 
         it "should get feed xml" do
           feed.parse_feed(feed_url)
-          expect(feed.instance_variable_get(:@source)).to be_a Feelter::FeedParser::RSS
+          expect(feed.instance_variable_get(:@source)).to be_a Feelter::Parser::RSS
         end
       end
 

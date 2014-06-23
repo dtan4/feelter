@@ -1,7 +1,7 @@
 require "spec_helper"
 
 module Feelter
-  module FeedParser
+  module Parser
     describe Atom do
       let(:atom) do
         open(fixture_path("atom.xml")).read

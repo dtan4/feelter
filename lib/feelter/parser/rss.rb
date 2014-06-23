@@ -1,7 +1,7 @@
 require "nokogiri"
 
 module Feelter
-  module FeedParser
+  module Parser
     class RSS
       def self.parsable?(xml)
         !((/\<rss|\<rdf/ =~ xml) && !(/feedburner/ =~ xml)).nil?

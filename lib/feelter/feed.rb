@@ -23,8 +23,8 @@ module Feelter
 
     def parser_classes
       [
-       Feelter::FeedParser::Atom,
-       Feelter::FeedParser::RSS,
+       Feelter::Parser::Atom,
+       Feelter::Parser::RSS,
       ]
     end
   end

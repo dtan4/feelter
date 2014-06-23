@@ -1,5 +1,5 @@
-require "feelter/feed_parser/atom"
-require "feelter/feed_parser/rss"
+require "feelter/parser/atom"
+require "feelter/parser/rss"
 require "feelter/feed"
 require "feelter/version"
 
