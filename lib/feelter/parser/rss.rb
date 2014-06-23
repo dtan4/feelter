@@ -1,5 +1,3 @@
-require "nokogiri"
-
 module Feelter
   module Parser
     class RSS

@@ -1,3 +1,6 @@
+require "nokogiri"
+require "open-uri"
+
 require "feelter/parser/atom"
 require "feelter/parser/rss"
 require "feelter/feed"

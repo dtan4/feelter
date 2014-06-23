@@ -1,5 +1,3 @@
-require "open-uri"
-
 module Feelter
   class Feed
     def initialize
