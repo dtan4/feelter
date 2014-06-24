@@ -11,7 +11,7 @@ module Feelter
 
       def exclude_by(query)
         raise ArgumentError if query.nil?
-        query.each { |key, value| filter_xml(key, value) }
+        query.each { |key, value| filter_xml(key.to_s, value) }
         @doc.to_s
       end
 
@@ -19,8 +19,8 @@ module Feelter
 
       def filter_xml(key, value)
         items.each do |item|
-          next unless item.css(key.to_s)
-          item.remove if /#{value}/ =~ item.css(key.to_s).text
+          next unless item.css(key)
+          item.remove if /#{value}/ =~ item.css(key).text
         end
       end
 
